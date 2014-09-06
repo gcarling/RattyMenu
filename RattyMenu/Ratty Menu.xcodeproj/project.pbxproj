@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1A900B18D0F72100A92504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A900A18D0F72100A92504 /* Foundation.framework */; };
+		BF1A900D18D0F72100A92504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A900C18D0F72100A92504 /* CoreGraphics.framework */; };
+		BF1A900F18D0F72100A92504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A900E18D0F72100A92504 /* UIKit.framework */; };
+		BF1A901518D0F72100A92504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A901318D0F72100A92504 /* InfoPlist.strings */; };
+		BF1A901718D0F72100A92504 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A901618D0F72100A92504 /* main.m */; };
+		BF1A901B18D0F72100A92504 /* RattyMenuAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A901A18D0F72100A92504 /* RattyMenuAppDelegate.m */; };
+		BF1A901E18D0F72100A92504 /* Main_4inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1A901C18D0F72100A92504 /* Main_4inch.storyboard */; };
+		BF1A902118D0F72100A92504 /* RattyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A902018D0F72100A92504 /* RattyMenuViewController.m */; };
+		BF1A902318D0F72100A92504 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1A902218D0F72100A92504 /* Images.xcassets */; };
+		BF1A902A18D0F72100A92504 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A902918D0F72100A92504 /* XCTest.framework */; };
+		BF1A902B18D0F72100A92504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A900A18D0F72100A92504 /* Foundation.framework */; };
+		BF1A902C18D0F72100A92504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A900E18D0F72100A92504 /* UIKit.framework */; };
+		BF1A903418D0F72100A92504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A903218D0F72100A92504 /* InfoPlist.strings */; };
+		BF1A903618D0F72100A92504 /* RattyMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A903518D0F72100A92504 /* RattyMenuTests.m */; };
+		BF1A905118D0F75400A92504 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904018D0F75400A92504 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905218D0F75400A92504 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904318D0F75400A92504 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905318D0F75400A92504 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904518D0F75400A92504 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905418D0F75400A92504 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904718D0F75400A92504 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905518D0F75400A92504 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904918D0F75400A92504 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905618D0F75400A92504 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A904D18D0F75400A92504 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905718D0F75400A92504 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A905018D0F75400A92504 /* Reachability.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		BF1A905918D0F87F00A92504 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A905818D0F87F00A92504 /* CFNetwork.framework */; };
+		BF1A905B18D0F88700A92504 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A905A18D0F88700A92504 /* SystemConfiguration.framework */; };
+		BF1A905D18D0F88E00A92504 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A905C18D0F88E00A92504 /* MobileCoreServices.framework */; };
+		BF1A905F18D0F89800A92504 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A905E18D0F89800A92504 /* libz.dylib */; };
+		BF1A906218D1119C00A92504 /* FoodViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A906118D1119C00A92504 /* FoodViewerViewController.m */; };
+		BFD806C818D13824001697B9 /* Main_3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD806C618D13824001697B9 /* Main_3.5inch.storyboard */; };
+		BFEED8E318D4F81900E12F62 /* ratty_menu120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEED8E218D4F81900E12F62 /* ratty_menu120@2x.png */; };
+		BFEED8E618D4F91800E12F62 /* ratty_menu58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEED8E418D4F91800E12F62 /* ratty_menu58@2x.png */; };
+		BFEED8E718D4F91800E12F62 /* ratty_menu80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEED8E518D4F91800E12F62 /* ratty_menu80@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF1A902D18D0F72100A92504 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1A8FFF18D0F72100A92504 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1A900618D0F72100A92504;
+			remoteInfo = RattyMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF1A900718D0F72100A92504 /* Ratty Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ratty Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1A900A18D0F72100A92504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF1A900C18D0F72100A92504 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF1A900E18D0F72100A92504 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF1A901218D0F72100A92504 /* Ratty Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ratty Menu-Info.plist"; sourceTree = "<group>"; };
+		BF1A901418D0F72100A92504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1A901618D0F72100A92504 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF1A901818D0F72100A92504 /* Ratty Menu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ratty Menu-Prefix.pch"; sourceTree = "<group>"; };
+		BF1A901918D0F72100A92504 /* RattyMenuAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RattyMenuAppDelegate.h; sourceTree = "<group>"; };
+		BF1A901A18D0F72100A92504 /* RattyMenuAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RattyMenuAppDelegate.m; sourceTree = "<group>"; };
+		BF1A901D18D0F72100A92504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_4inch.storyboard; sourceTree = "<group>"; };
+		BF1A901F18D0F72100A92504 /* RattyMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RattyMenuViewController.h; sourceTree = "<group>"; };
+		BF1A902018D0F72100A92504 /* RattyMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RattyMenuViewController.m; sourceTree = "<group>"; };
+		BF1A902218D0F72100A92504 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF1A902818D0F72100A92504 /* Ratty MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ratty MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1A902918D0F72100A92504 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF1A903118D0F72100A92504 /* Ratty MenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ratty MenuTests-Info.plist"; sourceTree = "<group>"; };
+		BF1A903318D0F72100A92504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1A903518D0F72100A92504 /* RattyMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RattyMenuTests.m; sourceTree = "<group>"; };
+		BF1A903F18D0F75400A92504 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		BF1A904018D0F75400A92504 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		BF1A904118D0F75400A92504 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		BF1A904218D0F75400A92504 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		BF1A904318D0F75400A92504 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		BF1A904418D0F75400A92504 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		BF1A904518D0F75400A92504 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		BF1A904618D0F75400A92504 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		BF1A904718D0F75400A92504 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		BF1A904818D0F75400A92504 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		BF1A904918D0F75400A92504 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		BF1A904A18D0F75400A92504 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		BF1A904B18D0F75400A92504 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		BF1A904C18D0F75400A92504 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		BF1A904D18D0F75400A92504 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		BF1A904E18D0F75400A92504 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		BF1A904F18D0F75400A92504 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BF1A905018D0F75400A92504 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BF1A905818D0F87F00A92504 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BF1A905A18D0F88700A92504 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF1A905C18D0F88E00A92504 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BF1A905E18D0F89800A92504 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BF1A906018D1119C00A92504 /* FoodViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewerViewController.h; sourceTree = "<group>"; };
+		BF1A906118D1119C00A92504 /* FoodViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewerViewController.m; sourceTree = "<group>"; };
+		BFD806C718D13824001697B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_3.5inch.storyboard; sourceTree = "<group>"; };
+		BFEED8E218D4F81900E12F62 /* ratty_menu120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratty_menu120@2x.png"; sourceTree = "<group>"; };
+		BFEED8E418D4F91800E12F62 /* ratty_menu58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratty_menu58@2x.png"; sourceTree = "<group>"; };
+		BFEED8E518D4F91800E12F62 /* ratty_menu80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratty_menu80@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1A900418D0F72100A92504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A905F18D0F89800A92504 /* libz.dylib in Frameworks */,
+				BF1A905D18D0F88E00A92504 /* MobileCoreServices.framework in Frameworks */,
+				BF1A905B18D0F88700A92504 /* SystemConfiguration.framework in Frameworks */,
+				BF1A905918D0F87F00A92504 /* CFNetwork.framework in Frameworks */,
+				BF1A900D18D0F72100A92504 /* CoreGraphics.framework in Frameworks */,
+				BF1A900F18D0F72100A92504 /* UIKit.framework in Frameworks */,
+				BF1A900B18D0F72100A92504 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A902518D0F72100A92504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A902A18D0F72100A92504 /* XCTest.framework in Frameworks */,
+				BF1A902C18D0F72100A92504 /* UIKit.framework in Frameworks */,
+				BF1A902B18D0F72100A92504 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1A8FFE18D0F72100A92504 = {
+			isa = PBXGroup;
+			children = (
+				BF1A901018D0F72100A92504 /* RattyMenu */,
+				BF1A902F18D0F72100A92504 /* RattyMenuTests */,
+				BF1A900918D0F72100A92504 /* Frameworks */,
+				BF1A900818D0F72100A92504 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1A900818D0F72100A92504 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A900718D0F72100A92504 /* Ratty Menu.app */,
+				BF1A902818D0F72100A92504 /* Ratty MenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1A900918D0F72100A92504 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A905E18D0F89800A92504 /* libz.dylib */,
+				BF1A905C18D0F88E00A92504 /* MobileCoreServices.framework */,
+				BF1A905A18D0F88700A92504 /* SystemConfiguration.framework */,
+				BF1A905818D0F87F00A92504 /* CFNetwork.framework */,
+				BF1A900A18D0F72100A92504 /* Foundation.framework */,
+				BF1A900C18D0F72100A92504 /* CoreGraphics.framework */,
+				BF1A900E18D0F72100A92504 /* UIKit.framework */,
+				BF1A902918D0F72100A92504 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1A901018D0F72100A92504 /* RattyMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A901918D0F72100A92504 /* RattyMenuAppDelegate.h */,
+				BF1A901A18D0F72100A92504 /* RattyMenuAppDelegate.m */,
+				BF1A901C18D0F72100A92504 /* Main_4inch.storyboard */,
+				BFD806C618D13824001697B9 /* Main_3.5inch.storyboard */,
+				BF1A901F18D0F72100A92504 /* RattyMenuViewController.h */,
+				BF1A902018D0F72100A92504 /* RattyMenuViewController.m */,
+				BF1A906018D1119C00A92504 /* FoodViewerViewController.h */,
+				BF1A906118D1119C00A92504 /* FoodViewerViewController.m */,
+				BF1A903F18D0F75400A92504 /* ASIAuthenticationDialog.h */,
+				BF1A904018D0F75400A92504 /* ASIAuthenticationDialog.m */,
+				BF1A904118D0F75400A92504 /* ASICacheDelegate.h */,
+				BF1A904218D0F75400A92504 /* ASIDataCompressor.h */,
+				BF1A904318D0F75400A92504 /* ASIDataCompressor.m */,
+				BF1A904418D0F75400A92504 /* ASIDataDecompressor.h */,
+				BF1A904518D0F75400A92504 /* ASIDataDecompressor.m */,
+				BF1A904618D0F75400A92504 /* ASIFormDataRequest.h */,
+				BF1A904718D0F75400A92504 /* ASIFormDataRequest.m */,
+				BF1A904818D0F75400A92504 /* ASIHTTPRequest.h */,
+				BF1A904918D0F75400A92504 /* ASIHTTPRequest.m */,
+				BF1A904A18D0F75400A92504 /* ASIHTTPRequestConfig.h */,
+				BF1A904B18D0F75400A92504 /* ASIHTTPRequestDelegate.h */,
+				BF1A904C18D0F75400A92504 /* ASIInputStream.h */,
+				BF1A904D18D0F75400A92504 /* ASIInputStream.m */,
+				BF1A904E18D0F75400A92504 /* ASIProgressDelegate.h */,
+				BF1A904F18D0F75400A92504 /* Reachability.h */,
+				BF1A905018D0F75400A92504 /* Reachability.m */,
+				BF1A902218D0F72100A92504 /* Images.xcassets */,
+				BF1A901118D0F72100A92504 /* Supporting Files */,
+			);
+			path = RattyMenu;
+			sourceTree = "<group>";
+		};
+		BF1A901118D0F72100A92504 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A901218D0F72100A92504 /* Ratty Menu-Info.plist */,
+				BF1A901318D0F72100A92504 /* InfoPlist.strings */,
+				BFEED8E218D4F81900E12F62 /* ratty_menu120@2x.png */,
+				BFEED8E418D4F91800E12F62 /* ratty_menu58@2x.png */,
+				BFEED8E518D4F91800E12F62 /* ratty_menu80@2x.png */,
+				BF1A901618D0F72100A92504 /* main.m */,
+				BF1A901818D0F72100A92504 /* Ratty Menu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF1A902F18D0F72100A92504 /* RattyMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A903518D0F72100A92504 /* RattyMenuTests.m */,
+				BF1A903018D0F72100A92504 /* Supporting Files */,
+			);
+			path = RattyMenuTests;
+			sourceTree = "<group>";
+		};
+		BF1A903018D0F72100A92504 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A903118D0F72100A92504 /* Ratty MenuTests-Info.plist */,
+				BF1A903218D0F72100A92504 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1A900618D0F72100A92504 /* Ratty Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1A903918D0F72100A92504 /* Build configuration list for PBXNativeTarget "Ratty Menu" */;
+			buildPhases = (
+				BF1A900318D0F72100A92504 /* Sources */,
+				BF1A900418D0F72100A92504 /* Frameworks */,
+				BF1A900518D0F72100A92504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ratty Menu";
+			productName = RattyMenu;
+			productReference = BF1A900718D0F72100A92504 /* Ratty Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF1A902718D0F72100A92504 /* Ratty MenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1A903C18D0F72100A92504 /* Build configuration list for PBXNativeTarget "Ratty MenuTests" */;
+			buildPhases = (
+				BF1A902418D0F72100A92504 /* Sources */,
+				BF1A902518D0F72100A92504 /* Frameworks */,
+				BF1A902618D0F72100A92504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1A902E18D0F72100A92504 /* PBXTargetDependency */,
+			);
+			name = "Ratty MenuTests";
+			productName = RattyMenuTests;
+			productReference = BF1A902818D0F72100A92504 /* Ratty MenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1A8FFF18D0F72100A92504 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RattyMenu;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Graham Carling";
+				TargetAttributes = {
+					BF1A902718D0F72100A92504 = {
+						TestTargetID = BF1A900618D0F72100A92504;
+					};
+				};
+			};
+			buildConfigurationList = BF1A900218D0F72100A92504 /* Build configuration list for PBXProject "Ratty Menu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF1A8FFE18D0F72100A92504;
+			productRefGroup = BF1A900818D0F72100A92504 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1A900618D0F72100A92504 /* Ratty Menu */,
+				BF1A902718D0F72100A92504 /* Ratty MenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1A900518D0F72100A92504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A902318D0F72100A92504 /* Images.xcassets in Resources */,
+				BF1A901518D0F72100A92504 /* InfoPlist.strings in Resources */,
+				BFEED8E718D4F91800E12F62 /* ratty_menu80@2x.png in Resources */,
+				BFD806C818D13824001697B9 /* Main_3.5inch.storyboard in Resources */,
+				BF1A901E18D0F72100A92504 /* Main_4inch.storyboard in Resources */,
+				BFEED8E318D4F81900E12F62 /* ratty_menu120@2x.png in Resources */,
+				BFEED8E618D4F91800E12F62 /* ratty_menu58@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A902618D0F72100A92504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A903418D0F72100A92504 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1A900318D0F72100A92504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A905418D0F75400A92504 /* ASIFormDataRequest.m in Sources */,
+				BF1A906218D1119C00A92504 /* FoodViewerViewController.m in Sources */,
+				BF1A905518D0F75400A92504 /* ASIHTTPRequest.m in Sources */,
+				BF1A905218D0F75400A92504 /* ASIDataCompressor.m in Sources */,
+				BF1A902118D0F72100A92504 /* RattyMenuViewController.m in Sources */,
+				BF1A905718D0F75400A92504 /* Reachability.m in Sources */,
+				BF1A905118D0F75400A92504 /* ASIAuthenticationDialog.m in Sources */,
+				BF1A905618D0F75400A92504 /* ASIInputStream.m in Sources */,
+				BF1A901B18D0F72100A92504 /* RattyMenuAppDelegate.m in Sources */,
+				BF1A901718D0F72100A92504 /* main.m in Sources */,
+				BF1A905318D0F75400A92504 /* ASIDataDecompressor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A902418D0F72100A92504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A903618D0F72100A92504 /* RattyMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF1A902E18D0F72100A92504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1A900618D0F72100A92504 /* Ratty Menu */;
+			targetProxy = BF1A902D18D0F72100A92504 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF1A901318D0F72100A92504 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1A901418D0F72100A92504 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF1A901C18D0F72100A92504 /* Main_4inch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1A901D18D0F72100A92504 /* Base */,
+			);
+			name = Main_4inch.storyboard;
+			sourceTree = "<group>";
+		};
+		BF1A903218D0F72100A92504 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1A903318D0F72100A92504 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFD806C618D13824001697B9 /* Main_3.5inch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD806C718D13824001697B9 /* Base */,
+			);
+			name = Main_3.5inch.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1A903718D0F72100A92504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF1A903818D0F72100A92504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF1A903A18D0F72100A92504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Graham Carling (EWTVRXKQWQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Graham Carling (EWTVRXKQWQ)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RattyMenu/Ratty Menu-Prefix.pch";
+				INFOPLIST_FILE = "RattyMenu/Ratty Menu-Info.plist";
+				PRODUCT_NAME = "Ratty Menu";
+				PROVISIONING_PROFILE = "7E89634D-86BE-4E4A-9D5F-44C424D457A6";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF1A903B18D0F72100A92504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Graham Carling (EWTVRXKQWQ)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RattyMenu/Ratty Menu-Prefix.pch";
+				INFOPLIST_FILE = "RattyMenu/Ratty Menu-Info.plist";
+				PRODUCT_NAME = "Ratty Menu";
+				PROVISIONING_PROFILE = "7E89634D-86BE-4E4A-9D5F-44C424D457A6";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF1A903D18D0F72100A92504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RattyMenu.app/RattyMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RattyMenu/RattyMenu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RattyMenuTests/Ratty MenuTests-Info.plist";
+				PRODUCT_NAME = "Ratty MenuTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF1A903E18D0F72100A92504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RattyMenu.app/RattyMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RattyMenu/RattyMenu-Prefix.pch";
+				INFOPLIST_FILE = "RattyMenuTests/Ratty MenuTests-Info.plist";
+				PRODUCT_NAME = "Ratty MenuTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1A900218D0F72100A92504 /* Build configuration list for PBXProject "Ratty Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A903718D0F72100A92504 /* Debug */,
+				BF1A903818D0F72100A92504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1A903918D0F72100A92504 /* Build configuration list for PBXNativeTarget "Ratty Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A903A18D0F72100A92504 /* Debug */,
+				BF1A903B18D0F72100A92504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1A903C18D0F72100A92504 /* Build configuration list for PBXNativeTarget "Ratty MenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A903D18D0F72100A92504 /* Debug */,
+				BF1A903E18D0F72100A92504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1A8FFF18D0F72100A92504 /* Project object */;
+}
